@@ -6,4 +6,11 @@ class ServiceUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ServiceUser
-        fields = ['id', 'telegram_id', 'type', 'first_name', 'last_name', 'phone_number']
+        fields = [
+            'id',
+            'telegram_id',
+            'type',
+            'first_name',
+            'last_name',
+            'phone_number',
+        ]

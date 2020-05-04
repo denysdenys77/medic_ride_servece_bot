@@ -29,7 +29,10 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['medic-bot-site.herokuapp.com']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'medic-bot-site.herokuapp.com',
+]
 
 
 # Application definition
@@ -150,3 +153,10 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'https://medic-ride-bot.herokuapp.com',
 )
+
+
+# variables to use in project
+VARS = {
+    'timedelta_in_minutes': 30,
+    'points_distance': 3
+}

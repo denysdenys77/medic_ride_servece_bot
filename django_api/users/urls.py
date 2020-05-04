@@ -9,5 +9,4 @@ router.register(r'users', views.ServiceUserViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('delete-user/<int:telegram_id>/', views.service_user_delete, name='delete_user')
 ]
